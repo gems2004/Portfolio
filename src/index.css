@@ -1,4 +1,115 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/public/fonts/Roboto-Black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/public/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/public/fonts/Inter-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url(/public/fonts/RobotoMono-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url(/public/fonts/RobotoMono-Thin.ttf);
+  font-weight: 100;
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: #2a2a2a;
+}
+
+.inter-font {
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.roboto-bold-font {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.roboto-black-font {
+  font-family: "Roboto";
+  font-weight: 800;
+}
+
+.robotomono-bold-font {
+  font-family: "RobotoMono";
+  font-weight: 700;
+}
+
+.robotomono-thin-font {
+  font-family: "RobotoMono";
+  font-weight: 100;
+}
+
+.navbar {
+  width: 100vw;
+  height: 4.8rem;
+  border-radius: 0px 0px 10px 10px;
+  background: rgba(78, 78, 78, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.top-tag {
+  top: 0;
+  left: 0;
+}
+
+.bottom-tag {
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 4rem;
+}
+.container .logo {
+  position: relative;
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .logo #ge-logo {
+  position: absolute;
+  right: 1.5rem;
+}
+.container .logo #shape {
+  position: relative;
+  right: 0.5rem;
+}
+.container .intro-text {
+  position: relative;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #d2d2d2;
+}
+.container .intro-text .html-tags {
+  position: absolute;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */
