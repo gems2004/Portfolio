@@ -1,0 +1,48 @@
+@keyframes fadeInTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes fadeInTransitionReversed {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes lineToLeft {
+  from {
+    right: 0;
+  }
+  to {
+    right: 104%;
+  }
+}
+@keyframes lineToRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes lineToTop {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 105%;
+  }
+}
+@keyframes lineToBottom {
+  from {
+    top: 0;
+  }
+  to {
+    top: 105%;
+  }
+}

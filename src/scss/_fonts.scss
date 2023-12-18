@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/public/fonts/Roboto-Black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/public/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/public/fonts/Inter-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url(/public/fonts/RobotoMono-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url(/public/fonts/RobotoMono-Thin.ttf);
+  font-weight: 100;
+}
+
+@mixin inter-font {
+  font-family: "Inter";
+  font-weight: 400;
+}
+@mixin roboto-bold-font {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+@mixin roboto-black-font {
+  font-family: "Roboto";
+  font-weight: 800;
+}
+@mixin robotomono-bold-font {
+  font-family: "Robotomono";
+  font-weight: 700;
+}
+@mixin robotomono-thin-font {
+  font-family: "Robotomono";
+  font-weight: 100;
+}

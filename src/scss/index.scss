@@ -1,0 +1,154 @@
+@import "./animations.scss";
+@import "./mixins";
+@import "./fonts";
+@import "./responsive";
+
+$main-color: #2a2a2a;
+$text: #d2d2d2;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $main-color;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 4.8rem;
+  border-radius: 0px 0px 10px 10px;
+  background: #323232;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  .nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.top-tag {
+  top: 0;
+  left: 0;
+}
+.bottom-tag {
+  bottom: 0;
+  right: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.welcome-container {
+  @include flexCenter;
+  position: relative;
+  min-height: 100vh;
+}
+
+.welcome {
+  display: flex;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &-logo {
+    position: relative;
+
+    .code_logo {
+      animation: fadeInTransition 2s;
+      @include transitionEaseInOut(1s);
+    }
+    .main_logo {
+      animation: fadeInTransitionReversed 2s;
+      @include transitionEaseInOut(1s);
+    }
+
+    #ge-logo {
+      position: absolute;
+      left: 6rem;
+      top: 3rem;
+    }
+    #shape {
+      position: relative;
+      right: 0.5rem;
+    }
+  }
+
+  &-text {
+    flex: 1;
+    width: fit-content;
+    position: relative;
+
+    .intro-text {
+      @include robotomono-bold-font;
+      position: relative;
+      text-align: center;
+      color: $text;
+
+      .html-tags {
+        @include robotomono-thin-font;
+        position: absolute;
+        font-size: 0.8rem;
+      }
+      .greet {
+        animation: fadeInTransitionReversed 2s;
+      }
+      .info {
+        animation: fadeInTransition 2s;
+      }
+      hr.vertical {
+        border: 0;
+        border-left: 2px solid #d2d2d2;
+        position: absolute;
+        right: 20px;
+        top: 0;
+
+        &-short {
+          animation: lineToRight 1s forwards;
+          @include transitionEaseInOut(1s);
+        }
+        &-tall {
+          animation: lineToLeft 1s forwards;
+          @include transitionEaseInOut(1s);
+        }
+      }
+    }
+
+    hr.horizontal {
+      position: absolute;
+      width: 100%;
+    }
+    hr.toBottom {
+      animation: lineToBottom 1s forwards;
+      @include transitionEaseInOut(1s);
+    }
+    hr.toTop {
+      animation: lineToTop 1s forwards;
+      @include transitionEaseInOut(1s);
+    }
+  }
+}
+
+.p-left > hr {
+  margin-left: -39px;
+}
+.gapping {
+  height: 100vh;
+}
+
+.p-left {
+  padding-left: 20px;
+}
