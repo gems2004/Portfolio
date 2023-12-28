@@ -10,6 +10,7 @@ function Project({ name, description, image, link }) {
           <img
             src="/Chevron_Down.svg"
             className={`project__chevron ${isClicked ? "rotate" : ""}`}
+            loading="lazy"
           />
         </div>
         <p className={`project_hidden ${isClicked ? "project_shown" : ""}`}>
