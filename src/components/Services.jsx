@@ -1,15 +1,4 @@
 import React from "react";
-import HtmlLogo from "../../public/HTML_logo.svg";
-import CssLogo from "../../public/Css_logo.svg";
-import JsLogo from "../../public/JavaScript.svg";
-import ReactLogo from "../../public/React.svg";
-import ExpressLogo from "../../public/express.js.svg";
-import MongoLogo from "../../public/MongoDB.svg";
-import NodeLogo from "../../public/Node.js.svg";
-import ReduxLogo from "../../public/Redux.svg";
-import TailwindLogo from "../../public/Tailwind.svg";
-import BootstrapLogo from "../../public/Bootstrap.svg";
-import SassLogo from "../../public/Sass logo.svg";
 
 function Services() {
   return (
@@ -23,18 +12,23 @@ function Services() {
         <div>
           <a href="https://www.w3schools.com/html" target="_blank">
             <img
-              src={HtmlLogo}
+              src="HTML_logo.svg"
               className="brand-logo"
               alt="Html"
               title="Html"
             />
           </a>
           <a href="https://www.w3schools.com/css" target="_blank">
-            <img src={CssLogo} className="brand-logo" alt="Css" title="Css" />
+            <img
+              src="CSS_logo.svg"
+              className="brand-logo"
+              alt="Css"
+              title="Css"
+            />
           </a>
           <a href="https://www.w3schools.com/js" target="_blank">
             <img
-              src={JsLogo}
+              src="JavaScript.svg"
               className="brand-logo"
               alt="JavaScript"
               title="JavaScript"
@@ -44,7 +38,7 @@ function Services() {
         <div>
           <a href="https://react.dev" target="_blank">
             <img
-              src={ReactLogo}
+              src="React.svg"
               className="brand-logo"
               alt="ReactJs"
               title="ReactJs"
@@ -52,7 +46,7 @@ function Services() {
           </a>
           <a href="https://redux-toolkit.js.org" target="_blank">
             <img
-              src={ReduxLogo}
+              src="Redux.svg"
               className="brand-logo"
               alt="ReduxJs/Toolkit"
               title="ReduxJs/Toolkit"
@@ -62,7 +56,7 @@ function Services() {
         <div>
           <a href="https://getbootstrap.com" target="_blank">
             <img
-              src={BootstrapLogo}
+              src="Bootstrap.svg"
               className="brand-logo"
               alt="Bootstrap"
               title="Bootstrap"
@@ -70,7 +64,7 @@ function Services() {
           </a>
           <a href="https://tailwindcss.com" target="_blank">
             <img
-              src={TailwindLogo}
+              src="Tailwind.svg"
               className="brand-logo"
               alt="TailwindCss"
               title="TailwindCss"
@@ -78,7 +72,7 @@ function Services() {
           </a>
           <a href="https://sass-lang.com" target="_blank">
             <img
-              src={SassLogo}
+              src="Sass logo.svg"
               className="brand-logo"
               alt="Sass"
               title="Sass"
@@ -88,7 +82,7 @@ function Services() {
         <div>
           <a href="https://nodejs.org" target="_blank">
             <img
-              src={NodeLogo}
+              src="Node.js.svg"
               className="brand-logo"
               alt="NodeJs"
               title="NodeJs"
@@ -96,7 +90,7 @@ function Services() {
           </a>
           <a href="https://www.mongodb.com" target="_blank">
             <img
-              src={MongoLogo}
+              src="MongoDB.svg"
               className="brand-logo"
               alt="MongoDB"
               title="MongoDB"
@@ -104,7 +98,7 @@ function Services() {
           </a>
           <a href="https://expressjs.com" target="_blank">
             <img
-              src={ExpressLogo}
+              src="express.js.svg"
               className="brand-logo"
               alt="ExpressJs"
               title="ExpressJs"
