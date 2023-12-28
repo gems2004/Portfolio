@@ -1,4 +1,4 @@
-@keyframes fadeInTransition {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -6,7 +6,7 @@
     opacity: 100;
   }
 }
-@keyframes fadeInTransitionReversed {
+@keyframes fadeInInfo {
   from {
     opacity: 0;
   }
@@ -14,35 +14,109 @@
     opacity: 100;
   }
 }
-@keyframes lineToLeft {
+
+@keyframes blobRotation {
   from {
-    right: 0;
+    rotate: 0deg;
   }
   to {
-    right: 104%;
+    rotate: -180deg;
   }
 }
-@keyframes lineToRight {
+@keyframes blobRotationBackwards {
   from {
-    left: 0;
+    rotate: -180deg;
   }
   to {
-    left: 100%;
+    rotate: 0deg;
   }
 }
-@keyframes lineToTop {
+
+@keyframes top-tag-intro {
   from {
-    bottom: 0;
+    top: -140%;
+    left: 4%;
   }
   to {
-    bottom: 105%;
+    top: -30%;
+    left: 4%;
   }
 }
-@keyframes lineToBottom {
+@keyframes top-tag-secondary {
   from {
-    top: 0;
+    top: 30%;
+    left: 0%;
   }
   to {
-    top: 105%;
+    top: -3%;
+    left: 0%;
+  }
+}
+@keyframes bottom-tag-intro {
+  from {
+    bottom: 0%;
+    right: 4%;
+  }
+  to {
+    bottom: -4%;
+    right: 0%;
+  }
+}
+@keyframes bottom-tag-secondary {
+  from {
+    bottom: 35%;
+    right: 15%;
+  }
+  to {
+    bottom: -3%;
+    right: -3%;
+  }
+}
+@keyframes brand {
+  from {
+    filter: grayscale(100);
+    transform: scale();
+  }
+  to {
+    filter: grayscale(0);
+    transform: scale(120%);
+  }
+}
+@keyframes blob-rotation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 180deg;
+  }
+}
+@keyframes blob-rotation-backwards {
+  from {
+    rotate: 180deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes upDownRotation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(16px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

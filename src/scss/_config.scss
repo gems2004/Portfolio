@@ -1,0 +1,89 @@
+@import "./fonts";
+
+$main-color: #2a2a2a;
+$text: #d2d2d2;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background: $main-color;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+h2 {
+  font-size: 5rem;
+  @include roboto-black-font;
+}
+h3 {
+  font-size: 3.5rem;
+  @include roboto-black-font;
+}
+p {
+  font-size: 1.5rem;
+  @include inter-font;
+}
+a {
+  color: $text;
+  text-decoration: none;
+  @include inter-font;
+}
+hr {
+  width: 60%;
+  margin: auto;
+}
+.hidden {
+  display: none !important;
+}
+.relative {
+  position: relative;
+}
+.html-tags {
+  @include robotomono-thin-font;
+  position: absolute;
+  font-size: 0.8rem;
+}
+.html-tags {
+  @include robotomono-thin-font;
+  position: absolute;
+  font-size: 0.8rem;
+}
+.top-tag-intro {
+  animation: top-tag-intro 1s forwards;
+}
+.bottom-tag-intro {
+  animation: bottom-tag-intro 1s forwards;
+}
+.top-tag-secondary {
+  animation: top-tag-secondary 1s forwards;
+}
+.bottom-tag-secondary {
+  animation: bottom-tag-secondary 1s forwards;
+}
+.bottom-tag {
+  animation: top-tag-secondary 1s forwards;
+}
+.top-tag {
+  animation: bottom-tag-secondary 1s forwards;
+}
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  // border: 1px solid red;
+}
+.heading {
+  margin: auto;
+  padding: 0 30px;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+}

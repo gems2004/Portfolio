@@ -7,19 +7,93 @@
 @mixin transitionEaseInOut($duration) {
   transition: all ease-in-out $duration;
 }
-
-@mixin media-md {
-  @media screen and (max-width: 768px) {
-    @content;
+@mixin lineToLeftAnimation(
+  $widthBefore,
+  $widthAfter,
+  $rightBefore,
+  $rightAfter,
+  $topAfter
+) {
+  @keyframes lineToLeft {
+    from {
+      right: $rightBefore;
+      rotate: 90deg;
+      width: $widthBefore;
+    }
+    to {
+      rotate: 0deg;
+      top: $topAfter;
+      right: $rightAfter;
+      width: $widthAfter;
+    }
   }
 }
-@mixin media-lg {
-  @media screen and (max-width: 1024px) {
-    @content;
+@mixin lineToRightAnimation(
+  $widthBefore,
+  $widthAfter,
+  $rightBefore,
+  $rightAfter,
+  $topBefore,
+  $topAfter
+) {
+  @keyframes lineToRight {
+    from {
+      rotate: 0deg;
+      top: $topBefore;
+      right: $rightBefore;
+      width: $widthBefore;
+    }
+    to {
+      right: $rightAfter;
+      rotate: 90deg;
+      width: $widthAfter;
+      top: $topAfter;
+    }
   }
 }
-@mixin media-xl {
-  @media screen and (max-width: 1600px) {
-    @content;
+@mixin lineToTopAnimation(
+  $widthBefore,
+  $widthAfter,
+  $rightBefore,
+  $rightAfter,
+  $bottomBefore,
+  $bottomAfter
+) {
+  @keyframes lineToTop {
+    from {
+      right: $rightBefore;
+      rotate: 90deg;
+      bottom: $bottomBefore;
+      width: $widthBefore;
+    }
+    to {
+      right: $rightAfter;
+      bottom: $bottomAfter;
+      rotate: -90deg;
+      width: $widthAfter;
+    }
+  }
+}
+@mixin lineToBottomAnimation(
+  $widthBefore,
+  $widthAfter,
+  $rightBefore,
+  $rightAfter,
+  $bottomBefore,
+  $bottomAfter
+) {
+  @keyframes lineToBottom {
+    from {
+      right: $rightBefore;
+      bottom: $bottomBefore;
+      rotate: -90deg;
+      width: $widthBefore;
+    }
+    to {
+      bottom: $bottomAfter;
+      right: $rightAfter;
+      rotate: 0deg;
+      width: $widthAfter;
+    }
   }
 }
