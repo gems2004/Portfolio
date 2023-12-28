@@ -5,12 +5,7 @@ function Navbar() {
   return (
     <div className="relative">
       <nav className="navbar">
-        <img
-          src="../public/Logo.svg"
-          width={64}
-          alt="GE Logo"
-          draggable="false"
-        />
+        <img src="Logo.svg" width={64} alt="GE Logo" draggable="false" />
         <ul className="nav-list">
           <li>
             <a href="#aboutUs">About us</a>
@@ -27,7 +22,7 @@ function Navbar() {
         </ul>
         {menuIsOpen ? (
           <img
-            src="/public/mobile/x-symbol.svg"
+            src="mobile/x-symbol.svg"
             className="nav-close nav-item"
             alt="Close Menu"
             onClick={() => setMenuIsOpen(false)}
@@ -35,7 +30,7 @@ function Navbar() {
           />
         ) : (
           <img
-            src="../public/mobile/Hamburger.svg"
+            src="mobile/Hamburger.svg"
             className="nav-burger nav-item"
             alt="Hamburger Menu"
             onClick={() => setMenuIsOpen(true)}

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer id="contact">
       <div>
-        <img src="/public/Logo.svg" alt="GE Logo" width="54px" />
+        <img src="Logo.svg" alt="GE Logo" width="54px" />
         <span>
           <p>
             GE
@@ -20,7 +20,7 @@ function Footer() {
         </p>
         <a href="https://www.github.com/gems2004" target="_blank">
           <img
-            src="/public/github_logo.svg"
+            src="github_logo.svg"
             alt="Github Logo"
             width="54px"
             height="54px"
